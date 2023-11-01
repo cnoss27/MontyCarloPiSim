@@ -12,7 +12,7 @@ def MontyCarloSim(SimNum):
         radius = x**2 + y**2
         if radius <= 1:
             SimInCircle += 1
-    return "<h1>Pi is roughly equal to </h1>" + str(4*(SimInCircle/TotalSim)) + "<h1> given the number of simulations you requested.</h1>"
+    return "<h1>Monty Carlo Simulation to estimate Pi</h1>" + "<p1>Pi is roughly equal to </p1>" + str(4*(SimInCircle/TotalSim)) + "<p1> given the number of simulations you requested which was </p1>" + str(TotalSim) + "<p1>.</p1>"
 
 if __name__ == '__main__':
     app.run()
